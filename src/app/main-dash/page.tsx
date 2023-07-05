@@ -28,7 +28,7 @@ export default function MainDash(){
         </Link>
       </div>
       <div className='w-screen relative'>
-        <HomeExample />
+      <HomeExample />
       </div>
     </main>
   )

@@ -13,13 +13,13 @@ import useDocuments from '@/hooks/useDocuments'
 
 export default function HomeExample(){
     const { documents, adjustments, loading } = useDocuments()
-    if(!documents) return(<LinearProgress />)
-
+    
     const data = useMemo(() => {
-        return prepData(documents, '6/1/2023', '6/30/2023', adjustments)
+      return prepData(documents, '6/1/2023', '6/30/2023', adjustments)
     }, [documents, adjustments])
     const [ sidebarChildren, setSidebarChildren ] = useState<React.ReactNode | null>(null)
     const [ showGrossWithAdjustments, setShowGrossWithAdjustments ] = useState<boolean>(false)
+    if(!documents) return(<LinearProgress />)
     return(
         <motion.div 
             className='flex justify-between gap-4'
