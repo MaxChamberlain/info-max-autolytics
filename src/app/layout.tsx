@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
+        <div className='w-full aspect-square rounded-full bg-gradient-to-r from-[#F90] from-8.85% via-[#F63333] via-25% to-[#00E0FF] to-100% blur-[12rem] absolute -top-[150%] -z-50 opacity-60'></div>
         {children}
       </body>
     </html>

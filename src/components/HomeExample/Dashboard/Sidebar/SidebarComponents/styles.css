@@ -1,0 +1,30 @@
+
+.home-screen-days-chart .MuiPickersToolbar-root, .home-screen-days-chart .MuiDayCalendar-weekDayLabel, .home-screen-days-chart .MuiPickersCalendarHeader-label, .home-screen-days-chart .MuiDialogActions-root, .home-screen-days-chart .MuiPickersArrowSwitcher-root, .home-sidebar .MuiDayPicker-header {
+    display: none !important;
+  }
+  
+  .home-screen-days-chart{
+    background-color: transparent !important;
+    pointer-events: none !important;
+    @apply 2xl:scale-100 scale-75;
+  }
+  
+  .home-sidebar .MuiPickerStaticWrapper-content{
+    background-color: transparent !important;
+  }
+
+  .recharts-bar-rectangle > *{
+    transition: all 0.3s !important;
+  }
+  
+  .home-screen-days-chart button.MuiPickersDay-root {
+    font-size: 0.5rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 25px !important;
+    width: 25px !important;  }
+
+    .home-screen-days-chart div[role="row"] {
+    height: 30px !important;
+    border-radius: 0 !important;
+  }
