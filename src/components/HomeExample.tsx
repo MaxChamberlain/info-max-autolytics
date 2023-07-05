@@ -47,7 +47,7 @@ export default function HomeExample(){
                     {sidebarChildren}
                 </Sidebar>
                 <TileRow style={{
-                  flexDirection: 'row'
+                  flexDirection: 'row' 
                 }}>
                     <TextTile
                             width='1/3'
