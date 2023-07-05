@@ -2,19 +2,15 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
+import logo from '../_assets/images/autolytics_logo.png'
+import Image from 'next/image'
 
 export default function Header(){
   const route = usePathname()
   return(
       <div className='flex w-screen h-32 py-4 px-16 justify-center items-center gap-4'>
-          <div className='w-1/6 text-white text-center tracking-widest whitespace-pre'>
-              <span className='font-normal text-4xl'>
-                  MAX
-              </span>
-              <br />
-              <span className='font-thin text-3xl'>
-                  AUTOLYTICS
-              </span>
+          <div className='w-1/6 invert'>
+            <Image src={logo} alt="Autolytics Logo" width={200} height={200} />
           </div>
           <div className='w-full text-white  text-center flex gap-8 justify-center'>
             <Link href='/'>

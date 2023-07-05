@@ -1,3 +1,4 @@
+'server-only'
 import { LocalizationProvider, StaticDateRangePicker } from "@mui/x-date-pickers-pro"
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import dayjs from "dayjs";
