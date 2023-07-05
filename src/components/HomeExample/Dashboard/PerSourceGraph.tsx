@@ -1,9 +1,7 @@
 'use client'
-import { Area, Bar, CartesianGrid, Cell, ComposedChart, ResponsiveContainer, TooltipProps, XAxis, YAxis, Tooltip } from "recharts"
+import { Area, Bar, CartesianGrid, Cell, ComposedChart, ResponsiveContainer, XAxis, YAxis } from "recharts"
 import { motion } from "framer-motion"
 import { useState } from "react"
-import { NameType, ValueType } from "recharts/types/component/DefaultTooltipContent"
-import { properNumber } from "../../../utils/text"
 import SourceChartChildren from "./Sidebar/SidebarComponents/SidebarChildren/SourceChartChildren"
 import AgeChartChildren from "./Sidebar/SidebarComponents/SidebarChildren/AgeChartChildren"
 

@@ -1,6 +1,3 @@
-'use client'
-import { prepData } from "./HomeExample/prepData"
-import { useMemo, useState } from "react"
 import PerDateGraph from "./HomeExample/Dashboard/PerDateGraph"
 import PerSourceGraph from "./HomeExample/Dashboard/PerSourceGraph"
 import Sidebar from "./HomeExample/Dashboard/Sidebar/Sidebar"
@@ -12,13 +9,8 @@ import { AnimatePresence, motion } from "framer-motion"
 import useDocuments from '@/hooks/useDocuments'
 
 export default function HomeExample(){
-    const { documents, adjustments, loading } = useDocuments()
+    const { documents, adjustments, loading, data, sidebarChildren, setSidebarChildren, showGrossWithAdjustments, setShowGrossWithAdjustments } = useDocuments()
     
-    const data = useMemo(() => {
-      return prepData(documents, '6/1/2023', '6/30/2023', adjustments)
-    }, [documents, adjustments])
-    const [ sidebarChildren, setSidebarChildren ] = useState<React.ReactNode | null>(null)
-    const [ showGrossWithAdjustments, setShowGrossWithAdjustments ] = useState<boolean>(false)
     if(!documents) return(<LinearProgress />)
     return(
         <motion.div 
