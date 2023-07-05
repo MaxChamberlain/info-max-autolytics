@@ -1,3 +1,4 @@
+'use client'
 import { Area, Bar, CartesianGrid, Cell, ComposedChart, ResponsiveContainer, TooltipProps, XAxis, YAxis, Tooltip } from "recharts"
 import { motion } from "framer-motion"
 import { useState } from "react"

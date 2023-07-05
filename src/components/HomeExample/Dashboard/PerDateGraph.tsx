@@ -1,3 +1,4 @@
+'use client'
 import { Area, Bar, CartesianGrid, Cell, ComposedChart, Legend, ResponsiveContainer, XAxis, YAxis } from "recharts"
 import { properText } from "../../../utils/text"
 import { Chip } from "@mui/material"
