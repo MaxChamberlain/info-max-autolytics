@@ -40,27 +40,27 @@ export default function Data(){
           <span className='text-3xl font-bold text-white text-center w-full max-w-2xl'>
             Data
           </span>
-          <span className='text-5xl font-bold text-white text-center w-full max-w-2xl'>
+          <span className='font-bold text-white text-center w-full max-w-2xl text-3xl sm:text-4xl md:text-5xl px-4 md:px-0'>
             What data is covered?
           </span>
-          <span className='text-xl text-white w-full max-w-xl text-center'>
+          <span className='text-white w-full max-w-xl text-center text-base md:text-lg lg:text-xl px-2 xl:px-0'>
             Max Autolytics stores an array of both static and dynamic metrics representing the details of a sale both upon acquisition and upon sale
           </span>
         </div>
         <div className='w-full max-w-5xl flex flex-col gap-24 h-full'>
-          <div className='flex justify-around w-full gap-12 items-start h-[30rem]'>
+          <div className='flex justify-around w-full gap-12 items-start lg:h-[30rem] flex-col lg:flex-row'>
             <div className='flex flex-col gap-2 w-full items-center rounded-xl p-4 border border-white/30 h-full '>
-              <span className='w-full pb-8 text-center font-bold text-4xl'>  
+              <span className='w-full pb-8 text-center font-bold text-2xl md:text-3xl lg:text-4xl'>  
                 Historical Data
               </span>
               <div className='flex gap-4 justify-center w-full'>
                 <div className='flex flex-col gap-2'>
-                  <span className='font-bold text-lg flex items-center gap-2'>
+                  <span className='font-bold text-base md:text-lg flex items-center gap-2'>
                     <div className='h-2 aspect-square bg-white rounded-full'></div>
                     At Acquisition
                   </span>
                   {storedData.historical['At Acquisition'].map((item, index) => (
-                    <div key={index} className='flex items-center gap-2 ml-2'>
+                    <div key={index} className='flex items-center gap-2 ml-2 text-sm md:text-base'>
                       <div className='h-px w-2 bg-white rounded-full'></div>
                       <span>
                         {item}
@@ -69,12 +69,12 @@ export default function Data(){
                   ))}
                 </div>
                 <div className='flex flex-col gap-2'>
-                  <span className='font-bold text-lg flex items-center gap-2'>
+                  <span className='font-bold text-base md:text-lg flex items-center gap-2'>
                     <div className='h-2 aspect-square bg-white rounded-full'></div>
                     At Sale
                   </span>
                   {storedData.historical['At Sale'].map((item, index) => (
-                    <div key={index} className='flex items-center gap-2 ml-2'>
+                    <div key={index} className='flex items-center gap-2 ml-2 text-sm md:text-base'>
                       <div className='h-px w-2 bg-white rounded-full'></div>
                       <span>
                         {item}
@@ -85,12 +85,12 @@ export default function Data(){
               </div>
             </div>
             <div className='flex flex-col gap-2 w-full h-full items-center rounded-xl p-4 border border-white/30'>
-              <span className='w-full pb-8 text-center font-bold text-4xl'>  
+              <span className='font-bold text-base md:text-lg flex items-center gap-2'>
                 Dynamic Data
               </span>
               <div className='flex flex-col gap-2'>
                 {storedData.dynamic.map((item, index) => (
-                  <div key={index} className='flex items-center gap-2 ml-2'>
+                  <div key={index} className='flex items-center gap-2 ml-2 text-sm md:text-base'>
                     <div className='h-2 aspect-square bg-white rounded-full'></div>
                     <span>
                       {item}
@@ -102,20 +102,20 @@ export default function Data(){
           </div>
         </div>
       </div>
-      <div className='w-full px-32 flex items-center justify-center gap-12 text-center z-50 h-[500px]'>
+      <div className='w-full lg:px-32 flex items-center justify-center gap-12 text-center z-50 h-[500px]'>
         <div className='w-1/2 aspect-square rounded-full bg-gradient-to-r from-[#F90] from-8.85% via-[#F63333] via-25% to-[#00E0FF] to-100% blur-[12rem] absolute -z-50 opacity-60'></div>
         <div className='flex flex-col justify-start w-2/3 gap-32 items-center h-full'>
-          <span className='text-6xl font-bold text-white text-center w-full max-w-lg'>
+          <span className='font-bold text-white text-center w-full lg:max-w-lg text-3xl sm:text-4xl md:text-5xl px-4'>
             See All Your Data Real-time
           </span>
-          <span className='text-xl text-white w-full max-w-2xl text-left'>
+          <span className='text-white w-full lg:max-w-2xl text-center xl:text-left text-base md:text-lg lg:text-xl px-2 xl:px-0'>
             Your sales data is all presented as you put it in, in real-time
             <br/>
             <br/>
             Set margin goals, or just view trades, any data can be viewed and changed. Whenever you like.
           </span>
         </div>
-        <div className='w-full' style={{ perspective: 1500 }}>
+        <div className='w-full hidden lg:block' style={{ perspective: 1500 }}>
           <div className='w-full ' style={{ transform: 'rotateY(-10deg) rotateX(5deg)' }}>
             <video autoPlay loop style={{ width: '100%', height: '500px' }}>
               <source src='videos/list.mp4' type="video/mp4" />

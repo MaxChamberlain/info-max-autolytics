@@ -9,15 +9,15 @@ export default function MainDash(){
           <span className='text-3xl font-bold text-white text-center w-full max-w-2xl'>
             Reporting / Main
           </span>
-          <span className='text-5xl font-bold text-white text-center w-full max-w-2xl'>
+          <span className='font-bold text-white text-center w-full max-w-2xl text-3xl sm:text-4xl md:text-5xl px-4 md:px-0'>
             How are analytics displayed?
           </span>
-          <span className='text-xl text-white w-full max-w-4xl text-center'>
+          <span className='text-white w-full max-w-xl text-center text-base md:text-lg lg:text-xl px-2 xl:px-0'>
             Max Autolytics is a reporting platform and as such includes different specified reports to assist in the analysis of both the performance of a store and the direction of the relevant market to that store. The overview report, found on the home page, is used to show an overview of the metrics produced by a store over a provided timespan
           </span>
         </div>
         <Link href='#main-dash-example'>
-          <div className='absolute bottom-8 flex flex-col gap-4 justify-end items-center left-0 right-0'>
+          <div className='absolute bottom-0 lg:bottom-8 flex flex-col gap-4 justify-end items-center left-0 right-0'>
             <span>
               Try It Out!
             </span>
@@ -27,8 +27,11 @@ export default function MainDash(){
           </div>
         </Link>
       </div>
-      <div className='w-screen relative'>
-      <HomeExample />
+      <div className='w-screen relative hidden xl:block'>
+        <HomeExample />
+      </div>
+      <div className='w-screen h-96 xl:hidden flex items-center justify-center text-center bg-white/20' id='main-dash-example'>
+        This works best on desktop. Come back on a desktop and try out our dashboard!
       </div>
     </main>
   )
